@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1d1e22, #313236);
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#app {
+  background-color: #2a2b2f;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #00ffe7;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: #3c3d42;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  margin: 0.3rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#check-btn {
+  background-color: #00ffae;
+  color: #1d1e22;
+}
+
+#check-btn:hover {
+  background-color: #00e69e;
+}
+
+#clear-btn {
+  background-color: #ff5f5f;
+  color: white;
+}
+
+#clear-btn:hover {
+  background-color: #e05757;
+}
+
+#results-div {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: #ffffff;
+}
+
+/* Confetti style */
+.confetti {
+  position: fixed;
+  top: -10px;
+  width: 10px;
+  height: 10px;
+  animation: fall 1s linear forwards;
+  z-index: 9999;
+  border-radius: 50%;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Result styles */
+.success {
+  background-color: rgba(0, 255, 174, 0.2);
+  border: 1px solid #00ffae;
+  transition: all 0.5s ease;
+}
+
+.error {
+  background-color: rgba(255, 95, 95, 0.2);
+  border: 1px solid #ff5f5f;
+  transition: all 0.5s ease;
+}
