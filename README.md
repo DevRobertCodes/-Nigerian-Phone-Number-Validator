@@ -21,7 +21,7 @@ A simple yet sleek web app that validates Nigerian phone numbers using regular e
 
 🚀 Live Demo
 Check it out live here:
-👉 [https://devrobertcodes.github.io/-Nigerian-Phone-Number-Validator/]
+👉 [https://devrobertcodes.github.io/Nigerian-Phone-Number-Validator/]
 
 🛠️ Technologies Used
 - HTML5
